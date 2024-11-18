@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_8f74b34ad3ca4eea0d621c21ac8fb223 {
+                #map_f98a2b3ff60d1bbacaeafeb26dfc4dfb {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,16 +39,16 @@
 <body>
     
     
-            <div class="folium-map" id="map_8f74b34ad3ca4eea0d621c21ac8fb223" ></div>
+            <div class="folium-map" id="map_f98a2b3ff60d1bbacaeafeb26dfc4dfb" ></div>
         
 </body>
 <script>
     
     
-            var map_8f74b34ad3ca4eea0d621c21ac8fb223 = L.map(
-                "map_8f74b34ad3ca4eea0d621c21ac8fb223",
+            var map_f98a2b3ff60d1bbacaeafeb26dfc4dfb = L.map(
+                "map_f98a2b3ff60d1bbacaeafeb26dfc4dfb",
                 {
-                    center: [55.7268349, 37.6059714],
+                    center: [55.7268349, 37.6173],
                     crs: L.CRS.EPSG3857,
                     zoom: 25,
                     zoomControl: true,
@@ -60,13 +60,40 @@
 
         
     
-            var tile_layer_1f3b26102609a24b240ed3a24ec02161 = L.tileLayer(
+            var tile_layer_3c357818653c3009ea5b6cf02ab81908 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_1f3b26102609a24b240ed3a24ec02161.addTo(map_8f74b34ad3ca4eea0d621c21ac8fb223);
+            tile_layer_3c357818653c3009ea5b6cf02ab81908.addTo(map_f98a2b3ff60d1bbacaeafeb26dfc4dfb);
         
+    
+            var marker_c6b27522df693fa28c8316905bbf4101 = L.marker(
+                [55.7268349, 37.6173],
+                {}
+            ).addTo(map_f98a2b3ff60d1bbacaeafeb26dfc4dfb);
+        
+    
+            var icon_cc2a343b92840a368e6cf9d1ea376725 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c6b27522df693fa28c8316905bbf4101.setIcon(icon_cc2a343b92840a368e6cf9d1ea376725);
+        
+    
+        var popup_fb4f8fb0569ab7465b022e618ae0e2dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bcdd0997455059521a7f573b5b347cc = $(`<div id="html_5bcdd0997455059521a7f573b5b347cc" style="width: 100.0%; height: 100.0%;">Ленинский проспект, 6</div>`)[0];
+                popup_fb4f8fb0569ab7465b022e618ae0e2dd.setContent(html_5bcdd0997455059521a7f573b5b347cc);
+            
+        
+
+        marker_c6b27522df693fa28c8316905bbf4101.bindPopup(popup_fb4f8fb0569ab7465b022e618ae0e2dd)
+        ;
+
+        
+    
 </script>
 </html>
