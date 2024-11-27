@@ -2,14 +2,14 @@
 
 TODO: (in priority)
 
-parse coords and args for customization (develop class or data struct) \n
-rerender server components on change \n
-get query OSM(xml or json) \n
-add styles for side  panel\n
-make inf cards\n
-logging\n
-admin panel for adding new locs\n
-roles w jwt\n
+parse coords and args for customization (develop class or data struct) <br/>
+rerender server components on change <br/>
+get query OSM(xml or json)<br/>
+add styles for side  panel<br/>
+make inf cards<br/>
+logging<br/>
+admin panel for adding new locs<br/>
+roles w jwt<br/>
 
 
 
