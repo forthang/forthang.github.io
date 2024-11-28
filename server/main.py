@@ -1,7 +1,7 @@
 import folium
 import logging
 from blockA import block_a
-from coordinates import corp
+from coordinates_corp import corp
 from coordinates_dormitories import dormitories
 
 # Create map
