@@ -1,37 +1,17 @@
 import folium
-from coordinates import locations, locations2, locations3
 
-def block_a(m):
+
+def block_a(m, data):
+    color = data["color"]
+    loc = data["loc"]
+    weight = data["weight"]
+    name = data["building"]["name"]
+    folium.Polygon(
+        locations=loc,
+        color=color,
+        weight=weight,
+        fill_color= color,
+        fill_opacity=1,
+        fill=True,
+        popup=name)
     
-    folium.Polygon(
-        locations=locations,
-        color="orange",
-        weight=6,
-        fill_color="orange",
-        fill_opacity=0.3,
-        fill=True,
-        popup="Tokyo, Japan",
-        tooltip="Click me!",
-    ).add_to(m)
-
-    folium.Polygon(
-        locations=locations2,
-        color="orange",
-        weight=6,
-        fill_color="orange",
-        fill_opacity=0.3,
-        fill=True,
-        popup="Tokyo, Japan",
-        tooltip="Click me!",
-    ).add_to(m)
-
-    folium.Polygon(
-        locations=locations3,
-        color="orange",
-        weight=6,
-        fill_color="orange",
-        fill_opacity=0.3,
-        fill=True,
-        popup="Tokyo, Japan",
-        tooltip="Click me!",
-    ).add_to(m)
