@@ -1,8 +1,7 @@
 import folium
 import logging
 from blockA import block_a
-from coordinates_corp import corp
-from coordinates_dormitories import dormitories
+bloc
 
 # Create map
 m = folium.Map(location=[55.7282903, 37.6096873], zoom_start=15)
