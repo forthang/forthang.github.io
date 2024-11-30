@@ -5,7 +5,7 @@ from coordinates_dormitories import dormitories
 def block_a(m):
     color = corp["color"]
     weight = corp["weight"]
-    for i in range (len(corp["building"]]
+    for i in range (len(corp["building"])):
         locat = corp["building"][i]["loc"]
         name = corp["building"][i]["name"]
         folium.Polygon(
@@ -15,12 +15,12 @@ def block_a(m):
             fill_color= color,
             fill_opacity=1,
             fill=True,
-            popup=name)
+            popup=name).add_to(m)
 
 def block_b(m):
     color = dormitories["color"]
     weight = dormitories["weight"]
-    for j in range (len(dormitories["building"]]
+    for j in range (len(dormitories["building"])):
         locat = dormitories["building"][j]["loc"]
         name = dormitories["building"][j]["name"]
         folium.Polygon(
@@ -30,5 +30,5 @@ def block_b(m):
             fill_color= color,
             fill_opacity=1,
             fill=True,
-            popup=name)
+            popup=name).add_to(m)
     
