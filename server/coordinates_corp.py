@@ -1,7 +1,7 @@
 corp = {
     "color": "orange",
     "weight": 3,
-    "building": [{
+    "building": {
       "name": "корпус Е",
       "loc":
       [
@@ -151,6 +151,5 @@ corp = {
         [55.72616, 37.60665]
       ]}
 
-    ]
 }
 

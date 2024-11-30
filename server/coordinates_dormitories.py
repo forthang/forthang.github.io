@@ -1,7 +1,7 @@
 dormitories = {
     "color": "red",
     "weight": 3,
-    "building": [{
+    "building": {
       "name": "общежитие М4",
       "loc":
       [
@@ -170,5 +170,4 @@ dormitories = {
         [55,7393699, 37,5427076],
         [55,7394044, 37,5422960]
       ]}
-    ]
 }
