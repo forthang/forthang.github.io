@@ -1,7 +1,7 @@
 import folium
 import logging
 from blockA import block_a
-bloc
+from blockA import block_b
 
 # Create map
 m = folium.Map(location=[55.7282903, 37.6096873], zoom_start=15)
@@ -9,11 +9,8 @@ m = folium.Map(location=[55.7282903, 37.6096873], zoom_start=15)
 # Parse nodes
 #/brief take points like (x,y) for creating rectangles or marking location
 
-for i in range(len(corp["building"])):
-    block_a(m, corp, i)
-    
-for j in range(len(dormitories["building"])):
-    block_a(m, dormitories, j)
+block_a(m)
+block_b(m)
 
 # Save to HTML
 m.save("../client/public/map.html")
