@@ -3,11 +3,11 @@ import folium
 
 def block_a(m, data, index):
     color = data["color"]
-    locat = data["building"][index]["loc"]
+    loc = data["building"][index]["loc"]
     weight = data["weight"]
     name = data["building"][index]["name"]
     folium.Polygon(
-        locations=locat,
+        locations=loc,
         color=color,
         weight=weight,
         fill_color= color,

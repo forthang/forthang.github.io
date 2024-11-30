@@ -5,7 +5,7 @@ from coordinates_corp import corp
 from coordinates_dormitories import dormitories
 
 # Create map
-m = folium.Map(location=[55.7282903, 37.6096873], zoom_start=15)
+m = folium.Map(location=[55.7282903, 37.6096873], zoom_start=16)
 
 # Parse nodes
 #/brief take points like (x,y) for creating rectangles or marking location
