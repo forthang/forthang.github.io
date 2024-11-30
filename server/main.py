@@ -13,7 +13,7 @@ m = folium.Map(location=[55.7282903, 37.6096873], zoom_start=15)
 for i in range(len(corp["building"])):
     block_a(m, corp, i)
     
-for j in range(len(dormitories["building])):
+for j in range(len(dormitories["building"])):
     block_a(m, dormitories, j)
 
 # Save to HTML
