@@ -13,9 +13,9 @@ def block_a(m):
             color=color,
             weight=weight,
             fill_color= color,
-            fill_opacity=1,
+            fill_opacity=0.3,
             fill=True,
-            popup=name).add_to(m)
+            tooltip=name).add_to(m)
 
 def block_b(m):
     color = dormitories["color"]
@@ -28,7 +28,7 @@ def block_b(m):
             color=color,
             weight=weight,
             fill_color= color,
-            fill_opacity=1,
+            fill_opacity=0.3,
             fill=True,
-            popup=name).add_to(m)
+            tooltip=name).add_to(m)
     
