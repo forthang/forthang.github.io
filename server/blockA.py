@@ -6,8 +6,8 @@ def block_a(m):
     color = corp["color"]
     weight = corp["weight"]
     for i in range (len(corp["building"]]
-        locat = corp["building"][index]["loc"]
-        name = corp["building"][index]["name"]
+        locat = corp["building"][i]["loc"]
+        name = corp["building"][i]["name"]
         folium.Polygon(
             locations=locat,
             color=color,
@@ -20,9 +20,9 @@ def block_a(m):
 def block_b(m):
     color = dormitories["color"]
     weight = dormitories["weight"]
-    for i in range (len(dormitories["building"]]
-        locat = dormitories["building"][index]["loc"]
-        name = dormitories["building"][index]["name"]
+    for j in range (len(dormitories["building"]]
+        locat = dormitories["building"][j]["loc"]
+        name = dormitories["building"][j]["name"]
         folium.Polygon(
             locations=locat,
             color=color,
