@@ -10,11 +10,11 @@ m = folium.Map(location=[55.7282903, 37.6096873], zoom_start=15)
 # Parse nodes
 #/brief take points like (x,y) for creating rectangles or marking location
 
-for i in range(len(corp["building"]["loc"])):
-    block_a(m, corp["building"]["loc"][i])
+for i in range(len(corp["building"])):
+    block_a(m, corp, i)
     
-for j in range(len(dormitories["building"]["loc"])):
-    block_a(m, dormitories["building"]["loc"][j])
+for j in range(len(dormitories["building"])):
+    block_a(m, dormitories, j)
 
 # Save to HTML
 m.save("../client/public/map.html")
