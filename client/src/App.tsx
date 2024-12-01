@@ -1,37 +1,57 @@
+import React from 'react';
+import { UploadOutlined, UserOutlined, VideoCameraOutlined } from '@ant-design/icons';
+import { Layout, Menu } from 'antd';
 
-import logo from './logo.svg';
-import React from "react";
-import ReactDOM from "react-dom";
+const { Content, Sider } = Layout;
 
-const iframe = ''; 
-  
-function App() {
-  
+const items = [UserOutlined, VideoCameraOutlined, UploadOutlined, UserOutlined,UserOutlined,UserOutlined ,UserOutlined,UserOutlined].map(
+  (icon, index) => ({
+    key: String(index + 1),
+    icon: React.createElement(icon),
+    label: `building ${index + 1}`,
+  }),
+);
+
+const App: React.FC = () => {
+
   return (
-        <div>
-            <div className="a" style={{position:"absolute"}}>
-               <h1>Map Display</h1>
-               <div className="li">1</div>
-               <div className="li">2</div>
-               <div className="li">3</div>
-               <div className="li">4</div>
-               <div className="li">5</div>
-               <div className="li">6</div>
-               <div className="li">7</div>
-               <div className="li">8</div>
-               <div className="li">9</div>
-              </div>
-            <iframe
+    <Layout>
+      <Sider 
+        breakpoint="lg"
+        collapsedWidth="0"
+        width="15%"
+        theme='light'
+        onBreakpoint={(broken) => {
+          console.log(broken);
+        }}
+        onCollapse={(collapsed, type) => {
+          console.log(collapsed, type);
+        }}
+
+      >
+        <div className="demo-logo-vertical" />
+        <Menu theme="light" mode="inline" defaultSelectedKeys={['4']} items={items} />
+      </Sider>
+      <Layout>
+        <Content>
+          <div
+            style={{
+              padding: 24,
+              minHeight: 360,
+              height: "100vh",
+            }}
+          >
+                        <iframe
                 src="/map.html"
                 title="Map"
                 style={{ width: '85%', height: '100vh', border: 'none', bottom:'0', right: '0', position:'absolute'}}
             />
-        </div>
-  )
-
-}
-
-
-
+          </div>
+        </Content>
+        
+      </Layout>
+    </Layout>
+  );
+};
 
 export default App;
