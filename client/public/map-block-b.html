@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_194794b2a07adf57504999aeb9a3bf86 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_194794b2a07adf57504999aeb9a3bf86" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_194794b2a07adf57504999aeb9a3bf86 = L.map(
+                "map_194794b2a07adf57504999aeb9a3bf86",
+                {
+                    center: [55.7282903, 37.6096873],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dcd05c5f5097dcdb0c436f826db7dbc9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_dcd05c5f5097dcdb0c436f826db7dbc9.addTo(map_194794b2a07adf57504999aeb9a3bf86);
+        
+    
+            var polygon_58aae38ca255f50319df95de14ea2a2e = L.polygon(
+                [[55.6548868, 37.521102], [55.6545897, 37.5207126], [55.6545441, 37.520822], [55.6544221, 37.5206622], [55.6543784, 37.5207668], [55.654408, 37.5208056], [55.6543765, 37.5208811], [55.6545532, 37.5211127], [55.6545931, 37.5210172], [55.6548284, 37.5213256], [55.6548634, 37.5212418], [55.6548409, 37.5212122], [55.6548868, 37.521102]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_194794b2a07adf57504999aeb9a3bf86);
+        
+    
+            polygon_58aae38ca255f50319df95de14ea2a2e.bindTooltip(
+                `<div>
+                     общежитие М4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_f194e738eb5d859453b6ef2e3b3512b8 = L.polygon(
+                [[55.6969, 37.57843], [55.69718, 37.57853], [55.6972, 37.5784], [55.69737, 37.57846], [55.69734, 37.57871], [55.6972, 37.57866], [55.69718, 37.57879], [55.69687, 37.57868], [55.6969, 37.57843]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_194794b2a07adf57504999aeb9a3bf86);
+        
+    
+            polygon_f194e738eb5d859453b6ef2e3b3512b8.bindTooltip(
+                `<div>
+                     общежитие Г-1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_bd32cd2227093fc70f44f2c3cb4f091a = L.polygon(
+                [[55.69795, 37.5787], [55.69802, 37.57872], [55.69803, 37.57868], [55.69809, 37.5787], [55.69803, 37.5792], [55.6981, 37.57923], [55.69806, 37.57962], [55.69798, 37.5796], [55.69798, 37.57964], [55.69792, 37.57692], [55.69795, 37.57936], [55.69788, 37.57934], [55.69795, 37.5787]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_194794b2a07adf57504999aeb9a3bf86);
+        
+    
+            polygon_bd32cd2227093fc70f44f2c3cb4f091a.bindTooltip(
+                `<div>
+                     общежитие Г-2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_3915c7b5c9c07ceabdc24da5ae20117f = L.polygon(
+                [[55.71069, 37.59603], [55.71067, 37.59603], [55.71067, 37.5962], [55.71065, 37.5962], [55.71065, 37.59594], [55.7108, 37.59595], [55.7108, 37.59603], [55.71099, 37.59604], [55.71099, 37.596], [55.71094, 37.59597], [55.71095, 37.59594], [55.71102, 37.59597], [55.71109, 37.59595], [55.7111, 37.59598], [55.71105, 37.596], [55.71105, 37.59604], [55.71125, 37.59605], [55.71126, 37.59559], [55.71128, 37.5956], [55.71128, 37.5955], [55.71089, 37.59547], [55.71089, 37.59556], [55.71088, 37.59559], [55.71087, 37.5956], [55.71085, 37.59559], [55.71084, 37.59557], [55.71084, 37.59547], [55.7104, 37.59543], [55.7104, 37.5953], [55.71046, 37.5953], [55.71046, 37.59527], [55.71056, 37.59528], [55.71056, 37.59531], [55.7113, 37.59536], [55.7113, 37.59534], [55.71134, 37.59534], [55.71134, 37.59537], [55.71208, 37.59542], [55.71208, 37.5954], [55.71218, 37.5954], [55.71218, 37.59543], [55.71221, 37.59543], [55.7122, 37.59557], [55.71175, 37.59553], [55.71174, 37.59561], [55.71174, 37.59564], [55.71172, 37.59565], [55.7117, 37.59564], [55.71169, 37.59561], [55.71169, 37.59553], [55.71137, 37.5955], [55.71136, 37.5956], [55.7114, 37.5956], [55.71139, 37.59634], [55.7118, 37.59636], [55.71179, 37.59677], [55.71169, 37.59676], [55.71169, 37.59679], [55.71162, 37.59679], [55.71161, 37.59679], [55.71077, 37.59675], [55.71076, 37.59679], [55.71075, 37.59681], [55.71073, 37.5968], [55.71072, 37.59678], [55.71072, 37.59671], [55.710069, 37.5967], [55.71069, 37.59661], [55.71068, 37.59662], [55.71069, 37.59603]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_194794b2a07adf57504999aeb9a3bf86);
+        
+    
+            polygon_3915c7b5c9c07ceabdc24da5ae20117f.bindTooltip(
+                `<div>
+                     общежитие ДК
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_c7e9d1c2a4d87ad9de13f3cee750b824 = L.polygon(
+                [[55.7391461, 37.5422278], [55.739137, 37.5423366], [55.7391098, 37.5423295], [55.7390921, 37.5425414], [55.7391195, 37.5425487], [55.7391119, 37.5426394], [55.7392134, 37.5426662], [55.7392479, 37.5422546], [55.7394044, 37.542296], [55.7394914, 37.542319], [55.739694, 37.5423726], [55.7397094, 37.5421883], [55.738956, 37.5419891], [55.7389405, 37.5421734], [55.7391461, 37.5422278]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_194794b2a07adf57504999aeb9a3bf86);
+        
+    
+            polygon_c7e9d1c2a4d87ad9de13f3cee750b824.bindTooltip(
+                `<div>
+                     общежитие ДСГ6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var polygon_ccc17c16094d986519480e55a510df91 = L.polygon(
+                [[55.7394044, 37.542296], [55.7394914, 37.542319], [55.739457, 37.5427306], [55.7396566, 37.5427834], [55.7396409, 37.5429705], [55.7394425, 37.542918], [55.7394448, 37.5428903], [55.7393314, 37.5428603], [55.7393285, 37.5428953], [55.7391978, 37.5428607], [55.7392007, 37.5428262], [55.7390974, 37.5427989], [55.7390943, 37.5428361], [55.7388922, 37.5427826], [55.7389087, 37.5425857], [55.7391119, 37.5426394], [55.7392134, 37.5426662], [55.7393699, 37.5427076], [55.7394044, 37.542296]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_194794b2a07adf57504999aeb9a3bf86);
+        
+    
+            polygon_ccc17c16094d986519480e55a510df91.bindTooltip(
+                `<div>
+                     общежитие ДСГ5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
