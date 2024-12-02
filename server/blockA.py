@@ -1,37 +1,34 @@
 import folium
-from coordinates import locations, locations2, locations3
+from coordinates_corp import corp
+from coordinates_dormitories import dormitories
 
 def block_a(m):
+    color = corp["color"]
+    weight = corp["weight"]
+    for i in range (len(corp["building"])):
+        locat = corp["building"][i]["loc"]
+        name = corp["building"][i]["name"]
+        folium.Polygon(
+            locations=locat,
+            color=color,
+            weight=weight,
+            fill_color= color,
+            fill_opacity=0.3,
+            fill=True,
+            tooltip=name).add_to(m)
+
+def block_b(m):
+    color = dormitories["color"]
+    weight = dormitories["weight"]
+    for j in range (len(dormitories["building"])):
+        locat = dormitories["building"][j]["loc"]
+        name = dormitories["building"][j]["name"]
+        folium.Polygon(
+            locations=locat,
+            color=color,
+            weight=weight,
+            fill_color= color,
+            fill_opacity=0.3,
+            fill=True,
+            tooltip=name).add_to(m)
     
-    folium.Polygon(
-        locations=locations,
-        color="orange",
-        weight=6,
-        fill_color="orange",
-        fill_opacity=0.3,
-        fill=True,
-        popup="Tokyo, Japan",
-        tooltip="Click me!",
-    ).add_to(m)
-
-    folium.Polygon(
-        locations=locations2,
-        color="orange",
-        weight=6,
-        fill_color="orange",
-        fill_opacity=0.3,
-        fill=True,
-        popup="Tokyo, Japan",
-        tooltip="Click me!",
-    ).add_to(m)
-
-    folium.Polygon(
-        locations=locations3,
-        color="orange",
-        weight=6,
-        fill_color="orange",
-        fill_opacity=0.3,
-        fill=True,
-        popup="Tokyo, Japan",
-        tooltip="Click me!",
-    ).add_to(m)
