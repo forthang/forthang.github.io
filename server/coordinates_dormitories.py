@@ -1,10 +1,10 @@
 dormitories = {
-    "color": "red",
+    "color": "MediumVioletRed",
     "weight": 3,
     "building": [{
         "name": "Общежитие Металлург-4",
         "address": "Москва, ул. Академика Волгина, д. 4",
-        "info": "Есть прачечная, кафе, салон красоты.",
+        "info": "В здании общежития есть прачечная, кафе, салон красоты.",
         "img": "https://sun9-59.userapi.com/impg/QHprkvEERmLYcvWbeQ5WHZHqZoN8JduwGuDj2w/HR_dTVtzdWQ.jpg?size=604x592&quality=96&sign=b833cb4ec506811b5039c27050bb4fca&type=album",
         "loc":
         [
@@ -25,7 +25,7 @@ dormitories = {
         {
         "name": "Общежитие Горняк-1",
         "address": "Москва, пр. 60-летия Октября, д. 15",
-        "info": "В здании есть столовая и кафе.",
+        "info": "В здании общажития есть столовая и кафе.",
         "img": "https://sun9-59.userapi.com/impg/QHprkvEERmLYcvWbeQ5WHZHqZoN8JduwGuDj2w/HR_dTVtzdWQ.jpg?size=604x592&quality=96&sign=b833cb4ec506811b5039c27050bb4fca&type=album",
         "loc":
         [
@@ -43,7 +43,7 @@ dormitories = {
         {
         "name": "Общежитие Горняк-2",
         "address": "Москва, пр. 60-летия Октября, д. 11",
-        "info": "В здании есть продуктовый круглосуточный магазин и прачечная.",
+        "info": "В здании общажития есть продуктовый круглосуточный магазин и прачечная.",
         "img": "https://sun9-59.userapi.com/impg/QHprkvEERmLYcvWbeQ5WHZHqZoN8JduwGuDj2w/HR_dTVtzdWQ.jpg?size=604x592&quality=96&sign=b833cb4ec506811b5039c27050bb4fca&type=album",
         "loc":
         [
@@ -64,7 +64,7 @@ dormitories = {
         {
         "name": "Общежитие Дом-коммуна",
         "address": "Москва, Ленинский проспект, д. 4А, стр. 23",
-        "info": "В здании есть столовая и конференц-зал.",
+        "info": "В здании общажития есть столовая и конференц-зал.",
         "img": "https://sun9-59.userapi.com/impg/QHprkvEERmLYcvWbeQ5WHZHqZoN8JduwGuDj2w/HR_dTVtzdWQ.jpg?size=604x592&quality=96&sign=b833cb4ec506811b5039c27050bb4fca&type=album",
         "loc":
         [
@@ -142,7 +142,7 @@ dormitories = {
         {
         "name": "Общежитие Дорогомиловский студенческий городок - 6",
         "address": "Москва, Ленинский проспект, д. 4А, стр. 23",
-        "info": "Есть столовая и прачечная.",
+        "info": "В здании общежития есть столовая и прачечная.",
         "img": "https://sun9-59.userapi.com/impg/QHprkvEERmLYcvWbeQ5WHZHqZoN8JduwGuDj2w/HR_dTVtzdWQ.jpg?size=604x592&quality=96&sign=b833cb4ec506811b5039c27050bb4fca&type=album",
         "loc":
         [
@@ -165,7 +165,7 @@ dormitories = {
         {
         "name": "Общежитие Дорогомиловский студенческий городок - 5",
         "address": "Москва, Ленинский проспект, д. 4А, стр. 23",
-        "info": "Есть столовая и прачечная.",
+        "info": "В здании общежития сть столовая и прачечная.",
         "img": "https://sun9-59.userapi.com/impg/QHprkvEERmLYcvWbeQ5WHZHqZoN8JduwGuDj2w/HR_dTVtzdWQ.jpg?size=604x592&quality=96&sign=b833cb4ec506811b5039c27050bb4fca&type=album",
         "loc":
         [
