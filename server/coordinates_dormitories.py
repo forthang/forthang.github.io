@@ -5,7 +5,7 @@ dormitories = {
         "name": "Общежитие Металлург-4",
         "address": "Москва, ул. Академика Волгина, д. 4",
         "info": "В здании общежития есть прачечная, кафе, салон красоты.",
-        "img": "https://sun9-59.userapi.com/impg/QHprkvEERmLYcvWbeQ5WHZHqZoN8JduwGuDj2w/HR_dTVtzdWQ.jpg?size=604x592&quality=96&sign=b833cb4ec506811b5039c27050bb4fca&type=album",
+        "img": "https://misis.ru/files/-/4ab8d9a1f3a01ab39a6125a1fc175fa9/MISIS_logoblock_deskFull_inv_eng_RGB-01_1.png",
         "loc":
         [
             [55.6548868, 37.5211020],  # общежитие М4
@@ -26,7 +26,7 @@ dormitories = {
         "name": "Общежитие Горняк-1",
         "address": "Москва, пр. 60-летия Октября, д. 15",
         "info": "В здании общажития есть столовая и кафе.",
-        "img": "https://sun9-59.userapi.com/impg/QHprkvEERmLYcvWbeQ5WHZHqZoN8JduwGuDj2w/HR_dTVtzdWQ.jpg?size=604x592&quality=96&sign=b833cb4ec506811b5039c27050bb4fca&type=album",
+        "img": "https://misis.ru/files/-/4ab8d9a1f3a01ab39a6125a1fc175fa9/MISIS_logoblock_deskFull_inv_eng_RGB-01_1.png",
         "loc":
         [
             [55.6969, 37.57843],  # общежитие Г-1
@@ -44,7 +44,7 @@ dormitories = {
         "name": "Общежитие Горняк-2",
         "address": "Москва, пр. 60-летия Октября, д. 11",
         "info": "В здании общажития есть продуктовый круглосуточный магазин и прачечная.",
-        "img": "https://sun9-59.userapi.com/impg/QHprkvEERmLYcvWbeQ5WHZHqZoN8JduwGuDj2w/HR_dTVtzdWQ.jpg?size=604x592&quality=96&sign=b833cb4ec506811b5039c27050bb4fca&type=album",
+        "img": "https://misis.ru/files/-/4ab8d9a1f3a01ab39a6125a1fc175fa9/MISIS_logoblock_deskFull_inv_eng_RGB-01_1.png",
         "loc":
         [
             [55.69795, 37.5787],  # общежитие Г-2
@@ -65,7 +65,7 @@ dormitories = {
         "name": "Общежитие Дом-коммуна",
         "address": "Москва, Ленинский проспект, д. 4А, стр. 23",
         "info": "В здании общажития есть столовая и конференц-зал.",
-        "img": "https://sun9-59.userapi.com/impg/QHprkvEERmLYcvWbeQ5WHZHqZoN8JduwGuDj2w/HR_dTVtzdWQ.jpg?size=604x592&quality=96&sign=b833cb4ec506811b5039c27050bb4fca&type=album",
+        "img": "https://misis.ru/files/-/4ab8d9a1f3a01ab39a6125a1fc175fa9/MISIS_logoblock_deskFull_inv_eng_RGB-01_1.png",
         "loc":
         [
             [55.71069, 37.59603],  # общежитие ДК
@@ -143,7 +143,7 @@ dormitories = {
         "name": "Общежитие Дорогомиловский студенческий городок - 6",
         "address": "Москва, Ленинский проспект, д. 4А, стр. 23",
         "info": "В здании общежития есть столовая и прачечная.",
-        "img": "https://sun9-59.userapi.com/impg/QHprkvEERmLYcvWbeQ5WHZHqZoN8JduwGuDj2w/HR_dTVtzdWQ.jpg?size=604x592&quality=96&sign=b833cb4ec506811b5039c27050bb4fca&type=album",
+        "img": "https://misis.ru/files/-/4ab8d9a1f3a01ab39a6125a1fc175fa9/MISIS_logoblock_deskFull_inv_eng_RGB-01_1.png",
         "loc":
         [
             [55.7391461, 37.5422278],  # общежитие ДСГ6
@@ -166,7 +166,7 @@ dormitories = {
         "name": "Общежитие Дорогомиловский студенческий городок - 5",
         "address": "Москва, Ленинский проспект, д. 4А, стр. 23",
         "info": "В здании общежития сть столовая и прачечная.",
-        "img": "https://sun9-59.userapi.com/impg/QHprkvEERmLYcvWbeQ5WHZHqZoN8JduwGuDj2w/HR_dTVtzdWQ.jpg?size=604x592&quality=96&sign=b833cb4ec506811b5039c27050bb4fca&type=album",
+        "img": "https://misis.ru/files/-/4ab8d9a1f3a01ab39a6125a1fc175fa9/MISIS_logoblock_deskFull_inv_eng_RGB-01_1.png",
         "loc":
         [
             [55.7394044, 37.5422960],  # общежитие ДСГ5
@@ -193,7 +193,7 @@ dormitories = {
         "name": "Общежитие Металлург-1",
         "address": "Москва, ул. Профсоюзная, д. 83, к. 1",
         "info": "На территории есть прачечная, магазины. Рядом с общежитием находится спорткомплекс Университета МИСИС, в котором проходят пары по физической культуре.",
-        "img": "https://sun9-59.userapi.com/impg/QHprkvEERmLYcvWbeQ5WHZHqZoN8JduwGuDj2w/HR_dTVtzdWQ.jpg?size=604x592&quality=96&sign=b833cb4ec506811b5039c27050bb4fca&type=album",
+        "img": "https://misis.ru/files/-/4ab8d9a1f3a01ab39a6125a1fc175fa9/MISIS_logoblock_deskFull_inv_eng_RGB-01_1.png",
         "loc":
         [
             [55.64587, 37.53011],  # общежитие М1
@@ -210,7 +210,7 @@ dormitories = {
         "name": "Общежитие Металлург-2",
         "address": "Москва, ул. Профсоюзная, д. 83, к. 2",
         "info": "На территории есть прачечная, магазины. Рядом с общежитием находится спорткомплекс Университета МИСИС, в котором проходят пары по физической культуре.",
-        "img": "https://sun9-59.userapi.com/impg/QHprkvEERmLYcvWbeQ5WHZHqZoN8JduwGuDj2w/HR_dTVtzdWQ.jpg?size=604x592&quality=96&sign=b833cb4ec506811b5039c27050bb4fca&type=album",
+        "img": "https://misis.ru/files/-/4ab8d9a1f3a01ab39a6125a1fc175fa9/MISIS_logoblock_deskFull_inv_eng_RGB-01_1.png",
         "loc":
         [
             [55.64523, 37.53008], # общежитие М2
@@ -227,7 +227,7 @@ dormitories = {
         "name": "Общежитие Металлург-3",
         "address": "Москва, ул. Профсоюзная, д. 83, к. 3",
         "info": "На территории есть прачечная, магазины. Рядом с общежитием находится спорткомплекс Университета МИСИС, в котором проходят пары по физической культуре.",
-        "img": "https://sun9-59.userapi.com/impg/QHprkvEERmLYcvWbeQ5WHZHqZoN8JduwGuDj2w/HR_dTVtzdWQ.jpg?size=604x592&quality=96&sign=b833cb4ec506811b5039c27050bb4fca&type=album",
+        "img": "https://misis.ru/files/-/4ab8d9a1f3a01ab39a6125a1fc175fa9/MISIS_logoblock_deskFull_inv_eng_RGB-01_1.png",
         "loc":
         [
             [55.64486, 37.5288], # общежитие М3
