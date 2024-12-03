@@ -6,8 +6,8 @@ const { Header, Content, Footer, Sider } = Layout;
 
 
 const items = [
-  { key: '1', label: 'Show Block A', icon: HomeOutlined },
-  { key: '2', label: 'Show Block B', icon: HomeOutlined },
+  { key: '1', label: 'Корпуса МИСИС', icon: HomeOutlined },
+  { key: '2', label: 'Общежития МИСИС', icon: HomeOutlined },
 ].map((item) => ({
   key: item.key,
   icon: React.createElement(item.icon),
