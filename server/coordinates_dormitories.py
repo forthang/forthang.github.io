@@ -191,7 +191,7 @@ dormitories = {
         ]},
         {
         "name": "Общежитие Металлург-1",
-        "address": "Москва, Профсоюзная улица, д. 83, к. 1",
+        "address": "Москва, ул. Профсоюзная, д. 83, к. 1",
         "info": "На территории есть прачечная, магазины. Рядом с общежитием находится спорткомплекс Университета МИСИС, в котором проходят пары по физической культуре.",
         "img": "https://sun9-59.userapi.com/impg/QHprkvEERmLYcvWbeQ5WHZHqZoN8JduwGuDj2w/HR_dTVtzdWQ.jpg?size=604x592&quality=96&sign=b833cb4ec506811b5039c27050bb4fca&type=album",
         "loc":
@@ -208,7 +208,7 @@ dormitories = {
         ]},
         {
         "name": "Общежитие Металлург-2",
-        "address": "Москва, Профсоюзная улица, д. 83, к. 2",
+        "address": "Москва, ул. Профсоюзная, д. 83, к. 2",
         "info": "На территории есть прачечная, магазины. Рядом с общежитием находится спорткомплекс Университета МИСИС, в котором проходят пары по физической культуре.",
         "img": "https://sun9-59.userapi.com/impg/QHprkvEERmLYcvWbeQ5WHZHqZoN8JduwGuDj2w/HR_dTVtzdWQ.jpg?size=604x592&quality=96&sign=b833cb4ec506811b5039c27050bb4fca&type=album",
         "loc":
@@ -225,7 +225,7 @@ dormitories = {
         ]},
         {
         "name": "Общежитие Металлург-3",
-        "address": "Москва, Профсоюзная улица, д. 83, к. 3",
+        "address": "Москва, ул. Профсоюзная, д. 83, к. 3",
         "info": "На территории есть прачечная, магазины. Рядом с общежитием находится спорткомплекс Университета МИСИС, в котором проходят пары по физической культуре.",
         "img": "https://sun9-59.userapi.com/impg/QHprkvEERmLYcvWbeQ5WHZHqZoN8JduwGuDj2w/HR_dTVtzdWQ.jpg?size=604x592&quality=96&sign=b833cb4ec506811b5039c27050bb4fca&type=album",
         "loc":
