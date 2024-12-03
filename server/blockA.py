@@ -12,8 +12,8 @@ def block_a(m):
         html = f"""
             <body style=background-color:PaleTurquoise>
             <h1> <font face="impact" size="7" color="DarkBlue"> {corp["building"][i]["name"]} </font></h1>
-            <p><font face="Arial" size="3"> {corp["building"][i]["address"]} </font></p>
-            <p><font face="Arial" size="3"> {corp["building"][i]["info"]} </font></p>
+            <p><font face="cascadia code" size="3"> {corp["building"][i]["address"]} </font></p>
+            <p><font face="cascadia code" size="3"> {corp["building"][i]["info"]} </font></p>
             <img src={corp["building"][i]["img"]} width=490 height=280>
         """
         iframe = branca.element.IFrame(html=html, width=510, height=500)
@@ -35,12 +35,13 @@ def block_b(m):
         locat = dormitories["building"][j]["loc"]
         name = dormitories["building"][j]["name"]
         html = f"""
-            <h1> <font face="impact" size="7" color="gray"> {dormitories["building"][j]["name"]} </font></h1>
-            <p><font face="Arial" size="3"> {dormitories["building"][j]["address"]} </font></p>
-            <p><font face="Arial" size="3"> {corp["building"][j]["info"]} </font></p>
-            <img src={dormitories["building"][j]["img"]} width=300 height=280>
+            <body style=background-color:MistyRose>
+            <h1> <font face="impact" size="7" color="RoyalBlue"> {dormitories["building"][j]["name"]} </font></h1>
+            <p><font face="cascadia code" size="3"> {dormitories["building"][j]["address"]} </font></p>
+            <p><font face="cascadia code" size="3"> {dormitories["building"][j]["info"]} </font></p>
+            <img src={dormitories["building"][j]["img"]} width="300" height="280">
         """
-        iframe = branca.element.IFrame(html=html, width=510, height=500)
+        iframe = branca.element.IFrame(html=html, width=460, height=500)
         popup = folium.Popup(iframe, max_width=500)
         folium.Polygon(
             locations=locat,
