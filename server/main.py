@@ -17,9 +17,9 @@ def generate_block_a_map():
     logging.info("Map for Block A has been saved to map-block-a.html")
 
 def generate_block_b_map():
-    x = 55.69024
-    y = 37.57462
-    z = 12.5
+    x = 55.67855
+    y = 37.56294
+    z = 12.75
     m = create_base_map(x, y, z)
     block_b(m)
     m.save("../client/public/map-block-b.html")
