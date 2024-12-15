@@ -1,22 +1,4 @@
 # MISSIS_Map
-
-TODO: (in priority)
-
-parse coords and args for customization (develop class or data struct) <br/>
-rerender server components on change <br/>
-get query OSM(xml or json)<br/>
-add styles for side  panel<br/>
-make inf cards<br/>
-logging<br/>
-admin panel for adding new locs<br/>
-roles w jwt<br/>
-
-
-
-
-
-
-Links:
 map of MISSIS campuses 
 
 OSM - https://www.openstreetmap.org/node/1012852234
@@ -27,7 +9,8 @@ Additional lib(just check) - https://habr.com/ru/companies/vk/articles/591879/
 
 logging documentation - https://docs.python.org/3/library/logging.html
 
-redux with ts - https://redux.js.org/usage/usage-with-typescript
+for run app you need to generate map - py ./main.py
+and start server - py ./server.py
 
-folium - https://python-visualization.github.io/folium/latest/
+#rewrite main for run server and generate map by auto
 

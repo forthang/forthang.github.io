@@ -17,7 +17,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_fc87e58c0c7cc2e2ee7e61502890357a {
+                #map_705d6912ac91267169dee289ae1a4b46 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -39,18 +39,18 @@
 <body>
     
     
-            <div class="folium-map" id="map_fc87e58c0c7cc2e2ee7e61502890357a" ></div>
+            <div class="folium-map" id="map_705d6912ac91267169dee289ae1a4b46" ></div>
         
 </body>
 <script>
     
     
-            var map_fc87e58c0c7cc2e2ee7e61502890357a = L.map(
-                "map_fc87e58c0c7cc2e2ee7e61502890357a",
+            var map_705d6912ac91267169dee289ae1a4b46 = L.map(
+                "map_705d6912ac91267169dee289ae1a4b46",
                 {
                     center: [55.7282903, 37.6096873],
                     crs: L.CRS.EPSG3857,
-                    zoom: 15,
+                    zoom: 16,
                     zoomControl: true,
                     preferCanvas: false,
                 }
@@ -60,100 +60,13 @@
 
         
     
-            var tile_layer_911007af22eed778ae702fd8a96fc932 = L.tileLayer(
+            var tile_layer_6df2ba5578312d31fc10820bfe8c6399 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
             );
         
     
-            tile_layer_911007af22eed778ae702fd8a96fc932.addTo(map_fc87e58c0c7cc2e2ee7e61502890357a);
-        
-    
-            var polygon_ce053cfeea8d391e91ab7f7cf17a5c59 = L.polygon(
-                [[55.7282903, 37.6096873], [55.728643, 37.6102828], [55.7287525, 37.6100784], [55.7283959, 37.6094764]],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 6}
-            ).addTo(map_fc87e58c0c7cc2e2ee7e61502890357a);
-        
-    
-        var popup_65dad7a5f3c3c562fe92a93329f4de11 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_6c861c43c372c88633abc798dbdb9793 = $(`<div id="html_6c861c43c372c88633abc798dbdb9793" style="width: 100.0%; height: 100.0%;">Tokyo, Japan</div>`)[0];
-                popup_65dad7a5f3c3c562fe92a93329f4de11.setContent(html_6c861c43c372c88633abc798dbdb9793);
-            
-        
-
-        polygon_ce053cfeea8d391e91ab7f7cf17a5c59.bindPopup(popup_65dad7a5f3c3c562fe92a93329f4de11)
-        ;
-
-        
-    
-    
-            polygon_ce053cfeea8d391e91ab7f7cf17a5c59.bindTooltip(
-                `<div>
-                     Click me!
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var polygon_1e505c308615759aec095319a1683c3f = L.polygon(
-                [[55.7291686, 37.6084277], [55.7289839, 37.6081302], [55.7286856, 37.6087145], [55.7288704, 37.609012]],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 6}
-            ).addTo(map_fc87e58c0c7cc2e2ee7e61502890357a);
-        
-    
-        var popup_6e91f0c322c6dd0c18abc7658a9b0e6d = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_a0523ccf49ae3f14e530c3d31bb956c9 = $(`<div id="html_a0523ccf49ae3f14e530c3d31bb956c9" style="width: 100.0%; height: 100.0%;">Tokyo, Japan</div>`)[0];
-                popup_6e91f0c322c6dd0c18abc7658a9b0e6d.setContent(html_a0523ccf49ae3f14e530c3d31bb956c9);
-            
-        
-
-        polygon_1e505c308615759aec095319a1683c3f.bindPopup(popup_6e91f0c322c6dd0c18abc7658a9b0e6d)
-        ;
-
-        
-    
-    
-            polygon_1e505c308615759aec095319a1683c3f.bindTooltip(
-                `<div>
-                     Click me!
-                 </div>`,
-                {"sticky": true}
-            );
-        
-    
-            var polygon_204453e11c5e5ae3c937625dd8a37ade = L.polygon(
-                [[55.7274465, 37.6058428], [55.7272454, 37.6062143], [55.7268993, 37.6056236], [55.72712294, 37.6050746]],
-                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.3, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 6}
-            ).addTo(map_fc87e58c0c7cc2e2ee7e61502890357a);
-        
-    
-        var popup_bde17a545408a259992381895e5f26a7 = L.popup({"maxWidth": "100%"});
-
-        
-            
-                var html_06b8f21bd02a094657ac373e7a3c4b3a = $(`<div id="html_06b8f21bd02a094657ac373e7a3c4b3a" style="width: 100.0%; height: 100.0%;">Tokyo, Japan</div>`)[0];
-                popup_bde17a545408a259992381895e5f26a7.setContent(html_06b8f21bd02a094657ac373e7a3c4b3a);
-            
-        
-
-        polygon_204453e11c5e5ae3c937625dd8a37ade.bindPopup(popup_bde17a545408a259992381895e5f26a7)
-        ;
-
-        
-    
-    
-            polygon_204453e11c5e5ae3c937625dd8a37ade.bindTooltip(
-                `<div>
-                     Click me!
-                 </div>`,
-                {"sticky": true}
-            );
+            tile_layer_6df2ba5578312d31fc10820bfe8c6399.addTo(map_705d6912ac91267169dee289ae1a4b46);
         
 </script>
 </html>
