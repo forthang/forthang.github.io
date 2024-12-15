@@ -1,17 +1,20 @@
 import folium
 import logging
-from blockA import block_a
-from blockA import block_b
+from drawBlock import block_a
+from drawBlock import block_b
 
-# Creating init map
+#  generating init empty map
+#  * @param {x} float start longitude
+#  * @param {y} float start latitude
+#  * @param {z} int start zoom
+#  * @returns {obj type folium.folium.Map} returns map
 def create_base_map(x: float, y: float, z: int) -> folium.folium.Map:
     return folium.Map(location=[x, y], zoom_start=z)
 
-#/brief creating map with corps
-# vars: x - start lon
-#       y - start lat
-#       z - start zoom
-
+#  generating map and drawing corps with block_a().Code of this function in drawBlock.py. Saving map into ../client/public/map-block-a.html
+#  * @var {x} float start longitude
+#  * @var {y} float start latitude
+#  * @var {z} int start zoom
 def generate_block_a_map():
     x = float(55.7282903)
     y = float(37.6096873)
@@ -21,6 +24,10 @@ def generate_block_a_map():
     block_a_map.save("../client/public/map-block-a.html")
     logging.info("Map for Block A has been saved to map-block-a.html")
 
+#  generating map and drawing corps with block_b().Code of this function in drawBlock.py.Saving map into ../client/public/map-block-a.html
+#  * @var {x} float start longitude
+#  * @var {y} float start latitude
+#  * @var {z} int start zoom
 def generate_block_b_map():
     x = float(55.67855)
     y = float(37.56294)
