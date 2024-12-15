@@ -5,7 +5,7 @@ corp = {
       "name": "Корпус Е",
       "address": "Москва, Ленинский проспект, д. 4А, стр. 23",
       "info": "Находится на ремонте.",
-      "img": "https://cdn1.iconfinder.com/data/icons/university-indigo-vol-2/256/Roommate-1024.png",
+      "img": "https://misis.ru/files/-/4ab8d9a1f3a01ab39a6125a1fc175fa9/MISIS_logoblock_deskFull_inv_eng_RGB-01_1.png",
       "loc":
       [
         [55.7283, 37.6075], # корпус Е
@@ -26,7 +26,7 @@ corp = {
       "name": "Корпус П",
       "address": "Москва, Ленинский проспект, д. 6, стр. 20",
       "info": "В здании проводятся множество различных курсов, преимущественно связанных с IT (Скилфэктори, Skillbox).",
-      "img": "https://cdn1.iconfinder.com/data/icons/university-indigo-vol-2/256/Roommate-1024.png",
+      "img": "https://misis.ru/files/-/4ab8d9a1f3a01ab39a6125a1fc175fa9/MISIS_logoblock_deskFull_inv_eng_RGB-01_1.png",
       "loc":
       [
         [55.72758, 37.60679], # корпус П
@@ -45,7 +45,7 @@ corp = {
       "name": "Корпус Б",
       "address": "Москва, Ленинский проспект, д. 4",
       "info": "Главный корпус университета. Через этот корпус можно попасть по переходам в центральную столовую и корпус А.",
-      "img": "https://cdn1.iconfinder.com/data/icons/university-indigo-vol-2/256/Roommate-1024.png",
+      "img": "https://misis.ru/files/-/4ab8d9a1f3a01ab39a6125a1fc175fa9/MISIS_logoblock_deskFull_inv_eng_RGB-01_1.png",
       "loc":
       [
         [55.7283959, 37.6094764], # корпус Б
@@ -66,7 +66,7 @@ corp = {
       "name": "Корпус Г",
       "address": "Москва, Ленинский проспект, д. 6, стр. 3",
       "info": "Внутри расположен музей НИТУ МИСИС и студенческий офис В нём есть переходы в корпуса А, Г розовый, Л, Т.",
-      "img": "https://cdn1.iconfinder.com/data/icons/university-indigo-vol-2/256/Roommate-1024.png",
+      "img": "https://misis.ru/files/-/4ab8d9a1f3a01ab39a6125a1fc175fa9/MISIS_logoblock_deskFull_inv_eng_RGB-01_1.png",
       "loc":
       [
         [55.7268349, 37.6059714],  # корпус Г
@@ -86,7 +86,7 @@ corp = {
       "name": "Корпус А",
       "address": "Москва, Ленинский проспект, д. 6, стр. 2",
       "info": "Есть переходы в корпусы Г и Б.",
-      "img": "https://cdn1.iconfinder.com/data/icons/university-indigo-vol-2/256/Roommate-1024.png",
+      "img": "https://misis.ru/files/-/4ab8d9a1f3a01ab39a6125a1fc175fa9/MISIS_logoblock_deskFull_inv_eng_RGB-01_1.png",
       "loc":
       [
         [55.72695, 37.60788], #корпус А
@@ -109,7 +109,7 @@ corp = {
       "name": "Спортивный комплекс",
       "address": "Москва, Ленинский проспект, д. 6, стр. 7",
       "info": "Включает в себя игровой зал, тренажёрный зал, зал бокса, 2 зала ОФП.",
-      "img": "https://cdn1.iconfinder.com/data/icons/university-indigo-vol-2/256/Roommate-1024.png",
+      "img": "https://misis.ru/files/-/4ab8d9a1f3a01ab39a6125a1fc175fa9/MISIS_logoblock_deskFull_inv_eng_RGB-01_1.png",
       "loc":
       [
         [55.72679, 37.60558], #Спортивный комплекс
@@ -128,7 +128,7 @@ corp = {
       "name": "Корпус Л",
       "address": "Москва, Ленинский проспект, д. 6, стр. 7",
       "info": "Считается лабораторным корпусом.",
-      "img": "https://cdn1.iconfinder.com/data/icons/university-indigo-vol-2/256/Roommate-1024.png",
+      "img": "https://misis.ru/files/-/4ab8d9a1f3a01ab39a6125a1fc175fa9/MISIS_logoblock_deskFull_inv_eng_RGB-01_1.png",
       "loc":
       [
         [55.72707, 37.60518], #Корпус Л
@@ -145,7 +145,7 @@ corp = {
       "name": "Корпус Д",
       "address": "Москва, Ленинский проспект, д. 6, стр. 21",
       "info": "Ассоциация инженерного образования России.",
-      "img": "https://cdn1.iconfinder.com/data/icons/university-indigo-vol-2/256/Roommate-1024.png",
+      "img": "https://misis.ru/files/-/4ab8d9a1f3a01ab39a6125a1fc175fa9/MISIS_logoblock_deskFull_inv_eng_RGB-01_1.png",
       "loc":
       [
         [55.7273, 37.60628], #Корпус Д
@@ -158,7 +158,7 @@ corp = {
       "name": "Розовое крыло",
       "address": "Москва, Ленинский проспект, д. 6, стр. 3",
       "info": "Здесь находится кафедра иностранных языков, а также медпункт.",
-      "img": "https://cdn1.iconfinder.com/data/icons/university-indigo-vol-2/256/Roommate-1024.png",
+      "img": "https://misis.ru/files/-/4ab8d9a1f3a01ab39a6125a1fc175fa9/MISIS_logoblock_deskFull_inv_eng_RGB-01_1.png",
       "loc":
       [
         [55.72616, 37.60665], #Розовое Крыло
@@ -181,7 +181,7 @@ corp = {
       "name": "Корпус К",
       "address": "Москва, ул. Крымский Вал, д. 3",
       "info": "Учебно-лабораторный корпус с современным ремонтом и столовой.",
-      "img": "https://cdn1.iconfinder.com/data/icons/university-indigo-vol-2/256/Roommate-1024.png",
+      "img": "https://misis.ru/files/-/4ab8d9a1f3a01ab39a6125a1fc175fa9/MISIS_logoblock_deskFull_inv_eng_RGB-01_1.png",
       "loc":
       [
         [55.72938, 37.60973], #Корпус К
@@ -200,7 +200,7 @@ corp = {
       "name": "Корпус В",
       "address": "Москва, Ленинский проспект, д. 2А",
       "info": "Корпус, в котором находятся кабинеты руководства.",
-      "img": "https://cdn1.iconfinder.com/data/icons/university-indigo-vol-2/256/Roommate-1024.png",
+      "img": "https://misis.ru/files/-/4ab8d9a1f3a01ab39a6125a1fc175fa9/MISIS_logoblock_deskFull_inv_eng_RGB-01_1.png",
       "loc":
       [
         [55.72777, 37.60744], #Корпус В
@@ -215,7 +215,7 @@ corp = {
       "name": "Корпус Н",
       "address": "Москва, Ленинский проспект, д. 2/4",
       "info": "В нём расположена центральная столовая университета.",
-      "img": "https://cdn1.iconfinder.com/data/icons/university-indigo-vol-2/256/Roommate-1024.png",
+      "img": "https://misis.ru/files/-/4ab8d9a1f3a01ab39a6125a1fc175fa9/MISIS_logoblock_deskFull_inv_eng_RGB-01_1.png",
       "loc":
       [
         [55.72868, 37.60872], #Корпус Н
@@ -228,7 +228,7 @@ corp = {
       "name": "Преподавательский вход",
       "address": "Москва, Ленинский проспект, д. 4",
       "info": "Вход для преподавателей.",
-      "img": "https://cdn1.iconfinder.com/data/icons/university-indigo-vol-2/256/Roommate-1024.png",
+      "img": "https://misis.ru/files/-/4ab8d9a1f3a01ab39a6125a1fc175fa9/MISIS_logoblock_deskFull_inv_eng_RGB-01_1.png",
       "loc":
       [
         [55.72829, 37.60969], #Преподавательский вход
@@ -241,7 +241,7 @@ corp = {
       "name": "Точка инноваций",
       "address": "Москва, Ленинский проспект, д. 6, стр. 7",
       "info": "Программа развития ЦТТ НИТУ МИСИС направлена на поддержку технологического лидерства Российской Федерации и её вхождению в число крупнейших экономик мира в приоритетных областях научно-технологического развития.",
-      "img": "https://cdn1.iconfinder.com/data/icons/university-indigo-vol-2/256/Roommate-1024.png",
+      "img": "https://misis.ru/files/-/4ab8d9a1f3a01ab39a6125a1fc175fa9/MISIS_logoblock_deskFull_inv_eng_RGB-01_1.png",
       "loc":
       [
         [55.727, 37.60579], #Точка инноваций

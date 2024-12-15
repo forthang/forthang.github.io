@@ -3,6 +3,7 @@ import branca
 from coordinates_corp import corp
 from coordinates_dormitories import dormitories
 
+
 def block_a(m):
     color = corp["color"]
     weight = corp["weight"]
