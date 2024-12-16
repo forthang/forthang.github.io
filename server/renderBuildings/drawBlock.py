@@ -1,7 +1,7 @@
 import folium
 import branca
-from coordinates_corp import corp
-from coordinates_dormitories import dormitories
+from data.coordinates_corp import corp
+from data.coordinates_dormitories import dormitories
 
 #  draw corps and add popups
 #  * @param {m} folium.folium.Map example of map object

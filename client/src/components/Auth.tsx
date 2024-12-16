@@ -25,10 +25,10 @@ const Auth: React.FC = () => {
       const data = await response.json();
       if (data.token) {
         login(data.token);
-        navigate('/admin'); //если данные верные то возвращается токен и редирект на адм панель
+        navigate('/admin');
       }
     } else {
-      setMessage('Неверное имя пользователя или пароль'); //иначе не допускается
+      setMessage('Неверное имя пользователя или пароль'); 
     }
   };
 

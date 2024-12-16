@@ -1,7 +1,7 @@
 import folium
 import logging
-from drawBlock import block_a
-from drawBlock import block_b
+from renderBuildings.drawBlock import block_a
+from renderBuildings.drawBlock import block_b
 
 #  generating init empty map
 #  * @param {x} float start longitude

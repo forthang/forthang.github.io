@@ -1,9 +1,10 @@
 from fastapi import FastAPI, Depends, HTTPException
 from fastapi.security import OAuth2PasswordBearer
-from fastapi.middleware.cors import CORSMiddleware
+from starlette.middleware.cors import CORSMiddleware
 from jose import JWTError, jwt
 from datetime import datetime, timedelta
 from pydantic import BaseModel
+from renderSindle import render_single
 import uvicorn
 
 app = FastAPI()
@@ -28,6 +29,14 @@ class LoginRequest(BaseModel):
     username: str
     password: str
 
+class BuildingData(BaseModel):
+    BuildingName: str
+    address: str
+    info: str
+    color: str
+    img: str
+    html: str
+
 
 # setting CORS
 origins = [
@@ -41,7 +50,6 @@ app.add_middleware(
     allow_methods=["*"], #allow all methods
     allow_headers=["*"], #allow all headers
 )
-
 # creating unique token for access admin panel and allow for 30min
 #  * @param {data} dictionary with name and password from  request
 #  * @param {expires_delta} expires time delta which counting with data time
@@ -59,6 +67,8 @@ def create_access_token(data: dict, expires_delta: timedelta = None) -> str:
 
     return encoded_jwt
 
+
+
 #  validate token and throw exception if wrong
 #  * @param {token} token stringify
 #  * @returns {str} Returns the username as str
@@ -75,28 +85,30 @@ def verify_token(token: str) -> str:
     except JWTError:
         raise HTTPException(status_code=403, detail="Access forbidden")
 
+
+
+
 # async function for post login. Compare request data and db data. If success returns token. else throw exception
 #  * @param {login_request} login request LoginRequest.username str LoginRequest.password str
 #  * @returns {str} returns access_token json formatted like dict
-
 @app.post("/api/login/")
 async def login(login_request: LoginRequest) -> dict:
-    user = fake_users_db.get(login_request.username)
+    user:dict = fake_users_db.get(login_request.username)
 
     if user and user["hashed_password"] == login_request.password:
-        access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
+        access_token_expires:timedelta = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
         access_token: str = create_access_token(data={"sub": login_request.username}, expires_delta=access_token_expires)
         return {"token": access_token}
 
     raise HTTPException(status_code=401, detail="Invalid username or password")
 
 
-@app.get("/api/protect-area/")
-async def protect_area(token: str = Depends(oauth2_scheme)):
-    username = verify_token(token)
+@app.post("/api/draw-building/")
+async def draw_building_endpoint(building_data: BuildingData):
+    if render_single(building_data):
+        return {"status": "success"}
 
-    return {"answer": 42}
-
+    raise HTTPException(status_code=500, detail="Failed to draw building")
 
 if __name__ == '__main__':
     uvicorn.run(app, host="0.0.0.0", port=8000)
