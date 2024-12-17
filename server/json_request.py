@@ -51,7 +51,6 @@ def request(url: str) -> None:
     for node_id in node_refs:
         # Выполняем GET-запрос к API OpenStreetMap для получения данных о конкретном узле
         node_response = requests.get(f"https://www.openstreetmap.org/api/0.6/node/{node_id}")
-        node_response.raise_for_status()  # Проверяем успешность запроса
         # Парсим XML-ответ в дерево элементов
         node_root = ET.fromstring(node_response.content)
         for node in node_root.findall("node"):  # Ищем все элементы <node> в ответе
@@ -68,18 +67,18 @@ def request(url: str) -> None:
     }
 
     # Записываем результат в файл output.json в формате JSON
-    with open(json_path, 'a', encoding='utf-8') as file:
+    with open("output.json", 'a', encoding='utf-8') as file:
         json.dump(result, file, ensure_ascii=False, indent=4)  # Указываем отступы для читаемости
 
     # Открываем файл для замены "}{", чтобы объединить объекты
-    with open(json_path, 'r', encoding='utf-8') as file:
+    with open("output.json", 'r', encoding='utf-8') as file:
         json_data = file.read()
 
     # Заменяем "}{", чтобы корректно объединить объекты
     json_data = json_data.replace("}{", ",")
 
     # Записываем обновлённые данные обратно в файл
-    with open(json_path, 'w', encoding='utf-8') as file:
+    with open("output.json", 'w', encoding='utf-8') as file:
         file.write(json_data)
 
 # Пример вызова
