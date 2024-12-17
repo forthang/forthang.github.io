@@ -6,10 +6,10 @@ from data.coordinates_dormitories import dormitories
 #  draw corps and add popups
 #  * @param {m} folium.folium.Map example of map object
 def block_a(m: folium.folium.Map):
-    color = corp["color"]
     weight = corp["weight"]
     for i in range (len(corp["building"])):
         location = corp["building"][i]["loc"]
+        color = dormitories["building"][i]["color"]
         name = corp["building"][i]["name"]
         html = f"""
             <body style=background-color:PaleTurquoise>
@@ -33,10 +33,10 @@ def block_a(m: folium.folium.Map):
 #  draw dormitories and add popups
 #  * @param {m} folium.folium.Map example of map object
 def block_b(m: folium.folium.Map):
-    color = dormitories["color"]
     weight = dormitories["weight"]
     for j in range (len(dormitories["building"])):
         location = dormitories["building"][j]["loc"]
+        color = dormitories["building"][j]["color"]
         name = dormitories["building"][j]["name"]
         html = f"""
             <body style=background-color:MistyRose>
