@@ -1,27 +1,52 @@
 import { HomeOutlined } from '@ant-design/icons';
 import { Layout, Menu } from 'antd';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const { Header, Content, Sider } = Layout;
 
-const items = [
-  { key: '1', label: 'Корпуса МИСИС', icon: <HomeOutlined /> },
-  { key: '2', label: 'Общежития МИСИС', icon: <HomeOutlined /> },
-];
-
-interface MapProps {
-  buildingNames: string[];
-  onBuildingSelect: (name: string) => void;
+interface MenuItem {
+  label: string;
 }
 
-export const Map: React.FC<MapProps> = ({ buildingNames, onBuildingSelect }) => {
+const initialItems: MenuItem[] = [
+  { label: 'Корпуса МИСИС' },
+  { label: 'Общежития МИСИС' },
+];
+
+export const Map = () => {
   const [mapUrl, setMapUrl] = useState('/map.html');
+  const [items, setItems] = useState<MenuItem[]>(initialItems); 
+
+  useEffect(() => {
+    const storedItems: MenuItem[] = [];
+
+    for (let i = 1; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key) {
+        const item = JSON.parse(localStorage.getItem(key) || '{}');
+        if (item.label) {
+          storedItems.push({ label: item.label });
+        }
+      }
+    }
+
+    setItems(prevItems => [...prevItems, ...storedItems]); 
+    console.log("Retrieved items:", storedItems); 
+  }, []);
 
   const handleMenuClick = (e: { key: string }) => {
-    if (e.key === '1') {
+    if (e.key === '0') {
       setMapUrl('/map-block-a.html');
-    } else if (e.key === '2') {
+    } else if (e.key === '1') {
       setMapUrl('/map-block-b.html'); 
+    } else {
+  
+      const selectedItemIndex = parseInt(e.key) - initialItems.length; 
+      if (selectedItemIndex >= 0 && selectedItemIndex < items.length) {
+        const selectedItem = items[selectedItemIndex];
+        const formattedLabel = selectedItem.label.replace(/\s+/g, '-').toLowerCase(); 
+        setMapUrl(`/map-${formattedLabel}.html`); 
+      }
     }
   };
 
@@ -29,14 +54,10 @@ export const Map: React.FC<MapProps> = ({ buildingNames, onBuildingSelect }) => 
     <Layout>
       <Sider width={'15%'}>
         <div className="demo-logo-vertical" />
-        
-        <Menu theme="light" defaultSelectedKeys={['1']} items={items} onClick={handleMenuClick} />
-
-        <h3 style={{color:'white'}}>Saved Buildings</h3>
-        <Menu mode="inline">
-          {buildingNames.map((name, index) => (
-            <Menu.Item key={index.toString()} onClick={() => onBuildingSelect(name)}>
-              {name}
+        <Menu theme="light" defaultSelectedKeys={['0']} onClick={handleMenuClick}>
+          {items.map((item, index) => (
+            <Menu.Item key={(index + initialItems.length).toString()} icon={<HomeOutlined />}>
+              {item.label}
             </Menu.Item>
           ))}
         </Menu>
