@@ -106,9 +106,10 @@ async def login(login_request: LoginRequest) -> dict:
 @app.post("/api/draw-building/")
 async def draw_building_endpoint(building_data: BuildingData):
     if render_single(building_data):
-        return {"status": "success"}
+        return {"response": building_data.BuildingName}
 
     raise HTTPException(status_code=500, detail="Failed to draw building")
+
 
 if __name__ == '__main__':
     uvicorn.run(app, host="0.0.0.0", port=8000)

@@ -1,21 +1,28 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../AuthContext';
 import { Button, Form, Input, message, Spin } from 'antd';
 
-const AdminPanel: React.FC<{ onBuildingSaved: (name: string) => void }> = ({ onBuildingSaved }) => {
+interface MenuItem {
+  label: string;
+}
+
+const AdminPanel: React.FC = () => {
   const [form] = Form.useForm();
   const navigate = useNavigate();
   const { isAuthenticated } = useAuth();
   const [loading, setLoading] = useState(false);
 
-  if (!isAuthenticated) {
-    navigate('/auth-adm');
-    return null;
-  }
+  useEffect(() => {
+    if (!isAuthenticated) {
+      navigate('/auth-adm');
+    }
+  }, [isAuthenticated, navigate]);
 
   const onFinish = async (values: any) => {
     setLoading(true);
+    console.log('Submitting form with values:', values);
+    
     try {
       const response = await fetch('http://localhost:8000/api/draw-building/', {
         method: 'POST',
@@ -26,20 +33,33 @@ const AdminPanel: React.FC<{ onBuildingSaved: (name: string) => void }> = ({ onB
       });
 
       if (response.ok) {
-        const buildingName = values.BuildingName; 
-        onBuildingSaved(buildingName); 
-        message.success('Building drawn successfully!');
+        const data = await response.json();
+        console.log('Server response:', data);
+
+        const newKey = data.id || Date.now().toString(); 
+
+
+        const newItem: MenuItem = {
+          label: data.message || 'New Item',
+        };
+
+              
+        localStorage.setItem(newKey, JSON.stringify(newItem));
+
+        message.success('Здание успешно нарисовано!');
         form.resetFields();
       } else {
-        message.error('Failed to draw building. Please try again.');
+        message.error('Не удалось нарисовать здание. Пожалуйста, попробуйте снова.');
+        console.error('Response error:', await response.text());
       }
     } catch (error) {
-      message.error('An error occurred while drawing the building.');
-      console.error(error);
+      message.error('Произошла ошибка при рисовании здания.');
+      console.error('Fetch error:', error);
     } finally {
       setLoading(false);
     }
   };
+  
 
   return (
     <div style={{ position: 'relative', paddingBlock: 32 }}>

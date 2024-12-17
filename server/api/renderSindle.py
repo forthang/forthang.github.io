@@ -20,13 +20,7 @@ def render_single(data: BuildingData) -> str:
     img = data.img
     html = data.html
     m = folium.Map(location=    [55.7227456, 37.6198714], zoom_start=15)
-    m.save(f"../../client/public/test_map.html")
-    m1 = folium.Map(location=[55.7227456, 37.6198714], zoom_start=15)
-    m1.save(f"../../client/public/test1_map.html")
-    m2 = folium.Map(location=[55.7227456, 37.6198714], zoom_start=15)
-    m2.save(f"../../client/public/test2_map.html")
-    m3 = folium.Map(location=[55.7227456, 37.6198714], zoom_start=15)
-    m3.save(f"../../client/public/test3_map.html")
+    m.save(f"../../client/public/map-new-item.html")
     return "test"
     #
     # overpass = Overpass()
